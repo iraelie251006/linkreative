@@ -56,7 +56,7 @@ export default function Index() {
                   <span className="text-white font-bold text-sm">HH</span>
                 </div>
                 <span className="text-xl font-bold text-foreground">
-                  Hexa Hype
+                  Linkreative
                 </span>
               </div>
               <p className="text-muted-foreground mb-4 max-w-md">
@@ -118,7 +118,7 @@ export default function Index() {
 
           <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
             <p>
-              © 2024 Hexa Hype. Made with ❤️ for Rwanda's artistic community.
+              © 2024 Linkreative. Made with ❤️ for Rwanda's artistic community.
             </p>
           </div>
         </div>

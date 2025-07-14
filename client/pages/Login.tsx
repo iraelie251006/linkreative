@@ -71,7 +71,7 @@ export default function Login() {
             </Link>
             <h1 className="text-3xl font-bold text-foreground">Welcome Back</h1>
             <p className="text-muted-foreground mt-2">
-              Sign in to your Hexa Hype account
+              Sign in to your Linkreative account
             </p>
           </div>
 

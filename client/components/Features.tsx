@@ -68,7 +68,7 @@ export default function Features() {
         {/* Features Section */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Why Choose Hexa Hype?
+            Why Choose Linkreative?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             The most trusted platform for booking artistic talent in Rwanda,
