@@ -25,7 +25,6 @@ import {
   Mail,
   Phone,
   MapPin,
-  Calendar,
   Shield,
   Settings,
   CreditCard,

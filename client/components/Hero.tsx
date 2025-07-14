@@ -4,7 +4,7 @@ import { Search, Calendar, Users, Star } from "lucide-react";
 
 export default function Hero() {
   return (
-    <div className="relative bg-gradient-to-br from-orange-50 via-white to-green-50 py-16 sm:py-24">
+    <div className="relative bg-gradient-to-br from-orange-50 via-white to-green-50 dark:from-orange-950/20 dark:via-background dark:to-green-950/20 py-16 sm:py-24">
       {/* Background Pattern */}
       <div
         className={
@@ -46,38 +46,46 @@ export default function Hero() {
           {/* Quick Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="bg-white rounded-lg shadow-sm p-6 border">
+              <div className="bg-card rounded-lg shadow-sm p-6 border">
                 <Users className="w-8 h-8 text-primary mx-auto mb-2" />
-                <div className="text-2xl font-bold text-foreground">500+</div>
+                <div className="text-2xl font-bold text-card-foreground">
+                  500+
+                </div>
                 <div className="text-sm text-muted-foreground">
                   Verified Artists
                 </div>
               </div>
             </div>
             <div className="text-center">
-              <div className="bg-white rounded-lg shadow-sm p-6 border">
+              <div className="bg-card rounded-lg shadow-sm p-6 border">
                 <Calendar className="w-8 h-8 text-accent mx-auto mb-2" />
-                <div className="text-2xl font-bold text-foreground">1,200+</div>
+                <div className="text-2xl font-bold text-card-foreground">
+                  1,200+
+                </div>
                 <div className="text-sm text-muted-foreground">
                   Events Booked
                 </div>
               </div>
             </div>
             <div className="text-center">
-              <div className="bg-white rounded-lg shadow-sm p-6 border">
+              <div className="bg-card rounded-lg shadow-sm p-6 border">
                 <Star className="w-8 h-8 text-primary mx-auto mb-2" />
-                <div className="text-2xl font-bold text-foreground">4.9</div>
+                <div className="text-2xl font-bold text-card-foreground">
+                  4.9
+                </div>
                 <div className="text-sm text-muted-foreground">
                   Average Rating
                 </div>
               </div>
             </div>
             <div className="text-center">
-              <div className="bg-white rounded-lg shadow-sm p-6 border">
+              <div className="bg-card rounded-lg shadow-sm p-6 border">
                 <div className="w-8 h-8 text-accent mx-auto mb-2 flex items-center justify-center">
                   🇷🇼
                 </div>
-                <div className="text-2xl font-bold text-foreground">All</div>
+                <div className="text-2xl font-bold text-card-foreground">
+                  All
+                </div>
                 <div className="text-sm text-muted-foreground">
                   Rwanda Provinces
                 </div>

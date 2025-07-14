@@ -63,12 +63,12 @@ export default function Features() {
   ];
 
   return (
-    <section className="py-16 sm:py-24 bg-white">
+    <section className="py-16 sm:py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Features Section */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Why Choose Linkreative?
+            Why Choose Hexa Hype?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             The most trusted platform for booking artistic talent in Rwanda,
@@ -85,7 +85,11 @@ export default function Features() {
               <CardHeader>
                 <div className="flex items-center space-x-3">
                   <div
-                    className={`p-2 rounded-lg bg-${feature.color.split("-")[1]}/10`}
+                    className={`p-2 rounded-lg ${
+                      feature.color === "text-primary"
+                        ? "bg-primary/10"
+                        : "bg-accent/10"
+                    }`}
                   >
                     <feature.icon className={`w-6 h-6 ${feature.color}`} />
                   </div>

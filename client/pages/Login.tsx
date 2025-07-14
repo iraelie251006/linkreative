@@ -56,7 +56,7 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-green-50">
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-green-50 dark:from-orange-950/20 dark:via-background dark:to-green-950/20">
       <Navigation />
 
       <div className="flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
@@ -71,7 +71,7 @@ export default function Login() {
             </Link>
             <h1 className="text-3xl font-bold text-foreground">Welcome Back</h1>
             <p className="text-muted-foreground mt-2">
-              Sign in to your Linkreative account
+              Sign in to your Hexa Hype account
             </p>
           </div>
 

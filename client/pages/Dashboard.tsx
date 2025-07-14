@@ -98,7 +98,7 @@ export default function Dashboard() {
             Welcome back, {user.firstName}! 👋
           </h1>
           <p className="text-lg text-muted-foreground">
-            Here's an overview of your Linkreative activity
+            Here's an overview of your Hexa Hype activity
           </p>
         </div>
 

@@ -17,12 +17,14 @@ import Dashboard from "./pages/Dashboard";
 import TalentProfile from "./pages/TalentProfile";
 import UserProfile from "./pages/UserProfile";
 import NotFound from "./pages/NotFound";
+import { ThemeProvider } from "./components/ThemeProvider";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <AuthProvider>
+    <ThemeProvider defaultTheme="system" storageKey="hexa-hype-theme">
+      <AuthProvider>
       <TooltipProvider>
         <Toaster />
         <Sonner />
@@ -43,6 +45,8 @@ const App = () => (
         </BrowserRouter>
       </TooltipProvider>
     </AuthProvider>
+    </ThemeProvider>
+    
   </QueryClientProvider>
 );
 

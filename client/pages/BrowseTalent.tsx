@@ -20,15 +20,7 @@ import {
 } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import {
-  Search,
-  Filter,
-  MapPin,
-  Star,
-  Clock,
-  DollarSign,
-  Shield,
-} from "lucide-react";
+import { Search, Filter, MapPin, Star, Clock, Shield } from "lucide-react";
 import {
   mockTalents,
   talentCategories,
@@ -151,7 +143,6 @@ export default function BrowseTalent() {
 
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-1 text-lg font-semibold text-primary">
-            <DollarSign className="w-5 h-5" />
             <span>{formatPrice(talent.hourlyRate)}/hr</span>
           </div>
           <Link to={`/talent/${talent.id}`}>

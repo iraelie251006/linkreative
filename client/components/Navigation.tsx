@@ -10,6 +10,7 @@ import {
 import { Calendar, User, Search, Menu, X, LogOut } from "lucide-react";
 import { useState } from "react";
 import { useAuth } from "@/lib/AuthContext";
+import { DarkModeToggle } from "@/components/DarkModeToggle";
 
 export default function Navigation() {
   const location = useLocation();
@@ -25,14 +26,17 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="bg-white/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+    <nav className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">LR</span>
-            </div>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fd6f963a133304061891b2841f29149b2%2Fc62b7f19ad794171a17f39b2ff2d68e8"
+              alt="Hexa Hype Logo"
+              className="w-16 h-13"
+              style={{ width: "62px", height: "52px" }}
+            />
             <span className="text-xl font-bold text-foreground">Linkreative</span>
           </Link>
 
@@ -56,13 +60,18 @@ export default function Navigation() {
 
           {/* Desktop Auth Buttons */}
           <div className="hidden md:flex items-center space-x-4">
+            <DarkModeToggle />
             {user ? (
               <>
                 <Link to="/join-talent">
                   <Button
                     variant="outline"
                     size="sm"
-                    className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                    className="border-primary hover:bg-primary hover:text-primary-foreground"
+                    style={{
+                      backgroundColor: "#ff7a1b",
+                      color: "rgb(2, 8, 23)",
+                    }}
                   >
                     Join as Talent
                   </Button>
@@ -103,7 +112,11 @@ export default function Navigation() {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                    className="border-primary hover:bg-primary hover:text-primary-foreground"
+                    style={{
+                      backgroundColor: "#ff7a1b",
+                      color: "rgb(2, 8, 23)",
+                    }}
                   >
                     Join as Talent
                   </Button>
@@ -144,6 +157,9 @@ export default function Navigation() {
               </Link>
             ))}
             <div className="pt-4 space-y-2">
+              <div className="flex justify-center pb-2">
+                <DarkModeToggle />
+              </div>
               {user ? (
                 <>
                   <Link
@@ -177,7 +193,7 @@ export default function Navigation() {
                     <Button
                       variant="outline"
                       size="sm"
-                      className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                      className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground dark:text-primary-foreground dark:bg-primary/20"
                     >
                       Join as Talent
                     </Button>
@@ -218,7 +234,7 @@ export default function Navigation() {
                     <Button
                       variant="outline"
                       size="sm"
-                      className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                      className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground dark:text-primary-foreground dark:bg-primary/20"
                     >
                       Join as Talent
                     </Button>
