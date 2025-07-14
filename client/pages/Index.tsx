@@ -37,7 +37,7 @@ export default function Index() {
               <Button
                 size="lg"
                 variant="outline"
-                className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-primary"
+                className="w-full sm:w-auto border-white text-primary hover:bg-white hover:text-primary"
               >
                 Join as Artist
               </Button>
@@ -53,7 +53,7 @@ export default function Index() {
             <div className="md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
                 <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">HH</span>
+                  <span className="text-white font-bold text-sm">LR</span>
                 </div>
                 <span className="text-xl font-bold text-foreground">
                   Linkreative
