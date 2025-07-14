@@ -54,10 +54,10 @@ export default function Index() {
             <div className="md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
                 <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">HH</span>
+                  <span className="text-white font-bold text-sm">LR</span>
                 </div>
                 <span className="text-xl font-bold text-foreground">
-                  Hexa Hype
+                  Linkreative
                 </span>
               </div>
               <p className="text-muted-foreground mb-4 max-w-md">
@@ -119,7 +119,7 @@ export default function Index() {
 
           <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
             <p>
-              © 2024 Hexa Hype. Made with ❤️ for Rwanda's artistic community.
+              © 2025 Linkreative. Made with ❤️ for Rwanda's artistic community.
             </p>
           </div>
         </div>

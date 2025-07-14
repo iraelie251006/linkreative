@@ -1,4 +1,4 @@
-// Mock data for the Hexa Hype platform
+// Mock data for the Linkreative platform
 
 export interface User {
   id: string;

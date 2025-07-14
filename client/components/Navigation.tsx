@@ -31,12 +31,9 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fd6f963a133304061891b2841f29149b2%2Fc62b7f19ad794171a17f39b2ff2d68e8"
-              alt="Hexa Hype Logo"
-              className="w-16 h-13"
-              style={{ width: "62px", height: "52px" }}
-            />
+            <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-sm">LR</span>
+            </div>
             <span className="text-xl font-bold text-foreground">Linkreative</span>
           </Link>
 

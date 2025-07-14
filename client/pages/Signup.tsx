@@ -67,7 +67,7 @@ export default function Signup() {
         toast({
           title: "Account created!",
           description:
-            "Welcome to Hexa Hype. Your account has been created successfully.",
+            "Welcome to Linkreative. Your account has been created successfully.",
         });
         navigate("/dashboard");
       }
@@ -95,7 +95,7 @@ export default function Signup() {
               Back to Home
             </Link>
             <h1 className="text-3xl font-bold text-foreground">
-              Join Hexa Hype
+              Join Linkreative
             </h1>
             <p className="text-muted-foreground mt-2">
               Create your account to start booking amazing talent
