@@ -11,6 +11,7 @@ import { Calendar, User, Search, Menu, X, LogOut } from "lucide-react";
 import { useState } from "react";
 import { useAuth } from "@/lib/AuthContext";
 import { DarkModeToggle } from "@/components/DarkModeToggle";
+import { BsLinkedin } from "react-icons/bs";
 
 export default function Navigation() {
   const location = useLocation();
@@ -58,6 +59,9 @@ export default function Navigation() {
           {/* Desktop Auth Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <DarkModeToggle />
+            <a href="https://www.linkedin.com/in/niyubwayo-irakoze-elie-14b003284/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
+            <BsLinkedin className="w-4 h-4" />
+            </a>
             {user ? (
               <>
                 <Link to="/join-talent">

@@ -119,7 +119,7 @@ export default function Index() {
 
           <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
             <p>
-              © 2025 Linkreative. Made with ❤️ for Rwanda's artistic community.
+              © 2025 Linkreative. Made by Hexahype Team for Rwanda's artistic community.
             </p>
           </div>
         </div>
